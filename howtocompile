@@ -1,0 +1,9 @@
+Andorid Compile code en c
+sudo apt-get install gcc-arm-linux-gnueabi
+arm-linux-gnueabi-gcc main.c -o main_cc -static
+adb push main_cc /data/local/tmp  (en sd hace mnt como no-exec)#include <stdio.h>
+int main()
+{
+  printf("Hello World!\n");
+  return 0;
+}
